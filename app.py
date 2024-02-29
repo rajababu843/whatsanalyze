@@ -10,7 +10,7 @@ warnings.filterwarnings("ignore")
 
 st.set_page_config(page_title="WhatsApp Group Chat Analysis")
 
-selected_language = st.sidebar.selectbox('Select the Language', ('English'))
+selected_language = st.sidebar.selectbox('Select the Language', ('English',''))
 
 tabs = ["How to Use ", "Model Application ", "Start Analysis "]
 
