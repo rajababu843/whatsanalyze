@@ -10,9 +10,11 @@ warnings.filterwarnings("ignore")
 
 st.set_page_config(page_title="WhatsApp Group Chat Analysis")
 
-selected_language = st.sidebar.selectbox('Select the Language', ('English',''))
-tabs = ["How to Use ", "Model Application ", "Start Analysis "]
-page = st.sidebar.radio("Tabs", tabs)
+selected_language = st.sidebar.selectbox('Select the Language ', ('English', ''))
+
+tabs = ["How to Use ", "Model Application ", "Do Your Own Analysis "]
+
+page = st.sidebar.radio("Tabs ", tabs)
 
 
 if selected_language == "English":
@@ -185,7 +187,7 @@ if selected_language == "English":
         plt.show()
         st.pyplot()
 
-    elif page == "Start Analysis ":
+    elif page == "Do Your Own Analysis ":
 
         st.markdown("<h1 style='text-align:center;'>WhatsApp Group Chat Analysis</h1>", unsafe_allow_html=True)
         st.markdown("<h2 style='text-align:center;'>Do Your Own Analysis</h2>", unsafe_allow_html=True)
